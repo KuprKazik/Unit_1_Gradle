@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         CashBackHackService service = new CashBackHackService();
         int amount = 900;
-        int actual = service.remain(amount);
+        int remain = service.remain(amount);
 
-        System.out.println("Для получения максимального кэшбека необходимо купить еще на " + actual + " рублей.");
+        System.out.println("Для получения максимального кэшбека необходимо купить еще на " + remain + " рублей.");
     }
 }
