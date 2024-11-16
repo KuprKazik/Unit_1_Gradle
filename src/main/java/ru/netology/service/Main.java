@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         CashBackHackService service = new CashBackHackService();
 
-        int amount = 900;
-        int expected = 100;
-        int actual = service.remain(amount);
+        int amount = 1000;
 
-        System.out.println("Для получения максимального кэшбека купите еще на " + actual + " рублей");
+        int remain = service.remain(amount);
+
+        System.out.println("Для получения максимального кэшбека купите еще на " + remain + " рублей.");
     }
 }
